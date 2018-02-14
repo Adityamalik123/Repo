@@ -5,7 +5,11 @@ $(document).ready(function(){
 		iframe.contentWindow.postMessage(JSON.stringify({event_code:'ym-client-event', data: JSON.stringify({
                                 event: {
                                     code: "products",
-                                    data: "asdasd"
+                                    data: {
+					    title:"dd",
+					    agenda:"tt",
+					    data_main:document.getElementById('demo1')
+				    },
                                 }
                             })}), 'https://chat.botplatform.io');
    
