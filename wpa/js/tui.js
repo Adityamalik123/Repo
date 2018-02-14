@@ -8,7 +8,7 @@ $(document).ready(function(){
                                     data: {
 					    title:"dd",
 					    agenda:"tt",
-					    data_main:document.getElementById('demo1')
+					    data_main:document.querySelector(".CodeMirror-selectedtext").innerHTML
 				    },
                                 }
                             })}), 'https://chat.botplatform.io');
