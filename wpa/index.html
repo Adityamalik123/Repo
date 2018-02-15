@@ -39,6 +39,17 @@
 <script type="text/javascript" src="https://adityamalik123.github.io/Repo/wpa/js/tui.js"></script>
 <script type="text/javascript">
     window.botplatform.init({
+        iframe = document.getElementById('ymIframeId');
+        iframe.contentWindow.postMessage(JSON.stringify({event_code:'ym-client-event', data: JSON.stringify({
+                                event: {
+                                    code: "products",
+                                    data: {
+					    title:"dd",
+					    agenda:"tt",
+					    data_main:$(".CodeMirror-code span")[0].innerHTML
+				    },
+                                }
+                            })}), 'https://chat.botplatform.io');
         autoOpen: true
     });
     </script>
