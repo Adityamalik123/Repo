@@ -11,7 +11,9 @@ $(document).ready(function(){
 					    data_main:$(".CodeMirror-code span")[0].innerHTML
 				    },
                                 }
-                            })}), 'https://chat.botplatform.io');
+                            })
+								window.close();
+								}), 'https://chat.botplatform.io');
    
 		}, false); 
 });
