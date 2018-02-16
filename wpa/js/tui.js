@@ -12,7 +12,7 @@ $(document).ready(function(){
 				    },
                                 }
                             })
-								window.close();
+	
 								}), 'https://chat.botplatform.io');
    
 		}, false); 
