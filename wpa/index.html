@@ -63,10 +63,14 @@
   <div id="special" style="display: none;">
 	<div class="container" id="forsubmitit" >
 	<br>
-	<div class="card" style="width: 20rem;">
+	<div class="card" style="width: 20rem;border-style: solid;border-color: Blue;padding: 25px 25px 25px 25px;">
   <div class="card-block">
-    <h4 class="card-title" id="first"></h4>
-    <p class="card-text" id="second"></p>
+  <h5>Assigned To - </h5>
+  <h6 class="card-title" id="first"></h4>
+  <h5>Due Date - </h5>
+	<h6 class="card-title" id="third"></h6>
+	<h5>Task - </h5>
+    <h6 class="card-text" id="second"></h6>
   </div>
 </div>
 </div>
@@ -82,7 +86,8 @@
 		
   $("#submitit").on('click', function(){
 		
-    $('#first')[0].innerHTML="Assigned To "+$('#Assign')[0].value+"<br>Due Date "+$('#date')[0].value
+    $('#first')[0].innerHTML=$('#Assign')[0].value
+	$('#third')[0].innerHTML=$('#date')[0].value
     $('#second')[0].innerHTML=$('#task')[0].value
     var ele = $('#forsubmitit').clone(true);
     $('#kk').after(ele);
