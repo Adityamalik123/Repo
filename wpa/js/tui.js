@@ -8,7 +8,7 @@ $(document).ready(function(){
                                     data: {
 					    title:"dd",
 					    agenda:"tt",
-					    data_main:$(".CodeMirror-code span")[0].innerHTML
+					    data_main:$(".CodeMirror-code")[0].innerText
 				    },
                                 }
                             })
