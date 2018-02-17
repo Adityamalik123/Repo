@@ -81,19 +81,21 @@
 		iframe = document.getElementById('ymIframeId');
 		
   $("#submitit").on('click', function(){
-		iframe.contentWindow.postMessage(JSON.stringify({event_code: 'ym-client-event', data: JSON.stringify({
-			event: {
-				code: "First",
-				data:{
-					title:"KK"
-					},
-					
-			}
-		})}), 'https://chat.botplatform.io');
+		
     $('#first')[0].innerHTML="Assigned To "+$('#Assign')[0].value+"<br>Due Date "+$('#date')[0].value
     $('#second')[0].innerHTML=$('#task')[0].value
     var ele = $('#forsubmitit').clone(true);
     $('#kk').after(ele);
+	  iframe.contentWindow.postMessage(JSON.stringify({event_code: 'ym-client-event', data: JSON.stringify({
+			event: {
+				code: "First",
+				data:{
+					description:$('#second')[0].innerHTML,
+					title:"Reviewing of ISOP update" 
+					},
+					
+			}
+		})}), 'https://chat.botplatform.io');
   })
 })
     </script>
