@@ -52,7 +52,7 @@
 	  &nbsp;
 	  <div class="col-xs-4">
 	  <label class="control-label" for="date">Due Date</label>
-        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="date"/>
 	  </div>
 	</div>
 	</div>
@@ -114,6 +114,19 @@
         element: document.getElementById("demo1"),
         spellChecker: false,
     });
+</script>
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
 </script>
 </body>
 </html>
