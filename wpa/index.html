@@ -192,6 +192,8 @@
 	$('#third')[0].innerHTML=$('#date')[0].value
     $('#second')[0].innerHTML=$('#task')[0].value
     var ele = $('#forsubmitit').clone(true);
+	  document.getElementById("first").value = "";
+     document.getElementById("second").value = "";
     $('#kk').after(ele);
 	  iframe.contentWindow.postMessage(JSON.stringify({event_code: 'ym-client-event', data: JSON.stringify({
 			event: {
