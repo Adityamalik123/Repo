@@ -8,7 +8,7 @@ $(document).ready(function(){
                                     data: {
 					    title:"dd",
 					    agenda:"tt",
-					    data_main:$(".CodeMirror-code")[0].innerText
+					    data_main:$(".CodeMirror-code")[0].innerText + "<br><br><b> Tasks Details </b><br>" + $("#finally_new")[0]
 				    },
                                 }
                             })
