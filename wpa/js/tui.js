@@ -13,7 +13,7 @@ $(document).ready(function(){
                                 }
                             })
 	
-								}), 'https://chat.botplatform.io');
+								}), 'https://botplatform.io/chat');
    
 		}, false); 
 });
